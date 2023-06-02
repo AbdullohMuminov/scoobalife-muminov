@@ -1,0 +1,62 @@
+
+#carouselExample{
+    width: 1300px;
+    height: 550px;
+    margin: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    flex-wrap: wrap;
+}
+header{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlePWUoFDqH7Ihv6BrgzCYvABLmKihu4IiWg&usqp=CAU);
+    background-repeat: cover no-repeat;
+    background-size: cover;
+}
+
+img{
+    height: 700px;
+    border-radius: 20px;
+}
+nav{
+    width: 1000px;
+    margin-left: 200px;
+    margin: auto;
+}
+
+.card{
+    height: 300px!important;
+}
+.cards a{
+    text-decoration: none;
+}
+.cards{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px 0 10px 0;
+    flex-wrap: wrap
+}
+.cards img{
+    height: 145px;
+}
+.cards .card:hover {
+    /* elementfa soya */
+    box-shadow: 0px 0px 10px -5px black!important;
+    /* o'tish vaqti */
+    transition: .3s!important;
+}
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+    .elements .cards .card{
+        width: 100%;
+    }
+}

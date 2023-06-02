@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+img {width: 100%;}
+a {
+    color: inherit !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url("https://greenfins.net/wp-content/uploads/2020/10/Impact-Of-Scuba-Diving-On-A-Coral-Reef-Dos-Donts-Green-Living-Zone-2.jpg");
+    background-size: 100%;
+}
+
+header nav {
+    /* elementlarni yonma-yon qoyadi */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    margin: auto;
+    /* ekranda qotib turadi: */
+    position: fixed;
+    width: 70%;
+}
+nav{
+    margin-top: 0!important;
+}
+header nav .logo {
+    width: 100px;
+}
+header nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header .showcase {
+    height: 100%;
+    display: flex;
+    /* "display: flex" yo'nalishini ozgartiradi */
+    flex-direction: column;
+    /* ikki yondan joylashtiradi */
+    justify-content: center;
+    /* tepa-pastdan joylashtiradi */
+    align-items: center;
+    color: white;
+}
+header .showcase .text {
+    width: 50%;
+    text-align: center;
+    background: rgb(52, 131, 242);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 50px;
+    background: rgb(167, 226, 254);
+}
+
+.elements .title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.elements .title h1 {
+    font-size: 60px;
+}
+
+.elements .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    /* joy to'lganda pastki qatorga elementlarni tushuradi */
+    flex-wrap: wrap;
+}
+
+.elements .cards .card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 20px -5px black;
+}
+
+.elements .cards .card:hover {
+    /* elementfa soya */
+    box-shadow: 0px 0px 10px -5px black;
+    /* o'tish vaqti */
+    transition: .3s;
+}
+
+.elements .cards .card .text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.elements .cards .card .text button {
+    padding: 15px 20px;
+    text-align: center;
+    background: blue;
+    color: black;
+    font-weight: 500;
+    /* harflar oraisdagi masofa */
+    letter-spacing: 1px;
+    font-size: 20px;
+    border: 2px solid blue;
+    color: white;
+    margin-top: 20px!important;
+}
+
+.elements .cards .card .text button:hover {
+    transition: .3s;
+    background: white;
+    color: blue;
+}
+
+footer {
+    background: rgb(51, 166, 255);
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    /* faqat "display:flex"da ishlaydigan joy tashlovchi kod */
+    gap: 25px;
+}
+
+footer .logo {
+    width: 200px;
+}
+
+footer .contuct {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+}
+
+footer .mail {
+    display: flex;
+    gap: 10px;
+}
+
+footer .mail input {
+    padding: 10px 15px;
+    color: black;
+    font-size: 18px;
+    outline: none;
+}
+
+footer .mail input:focus {
+    background: black;
+    color: white;
+}
+
+footer .mail button {
+    padding: 10px 15px;
+    color: black;
+    font-size: 18px;
+    background: white;
+    border: 2px solid white;
+    transition: .3s;
+}
+
+footer .mail button:hover {
+    color: white;
+    background: black;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+    .elements .cards .card{
+        width: 100%;
+    }
+}
